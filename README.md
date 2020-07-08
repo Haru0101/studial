@@ -1,4 +1,4 @@
-# studial2
+# studial
 
 ## Project setup
 ```

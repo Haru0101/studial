@@ -3,18 +3,21 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <Dial></Dial>
+    <Button></Button>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import Dial from './components/Dial.vue'
+import Button from './components/Button.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    Dial
+    Dial,
+    Button
   }
 }
 </script>

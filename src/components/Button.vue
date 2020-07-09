@@ -1,3 +1,5 @@
 <template>
-    <div>Footer Button</div>
+    <footer class="footer">
+        Footer Button
+    </footer>
 </template>

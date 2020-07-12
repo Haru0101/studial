@@ -2,7 +2,7 @@
   <div id="app">
     <Logo v-show="true"></Logo>
     <Dial v-show="false"></Dial>
-    <SelectOption v-show="true"></SelectOption>
+    <SelectOption v-show="true" :settingTime="settingTime"></SelectOption>
     <Button v-show="false"></Button>
   </div>
 </template>
@@ -20,6 +20,11 @@ export default {
     SelectOption,
     Button,
     Logo
+  },
+  data() {
+    return {
+      settingTime: 15
+    }
   }
 }
 </script>

@@ -1,5 +1,12 @@
 <template>
     <div>
-        Select Option
+        {{ settingTime }}
     </div>
 </template>
+<script>
+export default {
+    props: {
+        settingTime: Number
+    }
+}
+</script>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Logo v-show="true"></Logo>
-    <Dial v-show="false"></Dial>
+    <Dial v-show="false" :selectedTime="selectedTime"></Dial>
     <SelectOption v-show="true" :optionTime="optionTime"></SelectOption>
     <Button v-show="false" :buttonName="buttonName"></Button>
   </div>
@@ -25,7 +25,7 @@ export default {
     return {
       optionTime: 15,
       buttonName: "Start",
-      
+      selectedTime: 30
     }
   }
 }

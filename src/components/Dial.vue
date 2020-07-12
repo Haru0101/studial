@@ -1,3 +1,10 @@
 <template>
-    <div>Dial</div>
+    <div>{{ selectedTime }}</div>
 </template>
+<script>
+export default {
+    props: {
+        selectedTime: Number
+    }
+}
+</script>

@@ -1,20 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <Logo></Logo>
     <Dial></Dial>
+    <SelectOption></SelectOption>
     <Button></Button>
   </div>
 </template>
 
 <script>
-import Dial from './components/Dial.vue'
-import Button from './components/Button.vue'
+import Dial from './components/Dial'
+import Button from './components/Button'
+import SelectOption from './components/SelectOption'
+import Logo from './components/Logo'
 
 export default {
   name: 'App',
   components: {
     Dial,
-    Button
+    SelectOption,
+    Button,
+    Logo
   }
 }
 </script>

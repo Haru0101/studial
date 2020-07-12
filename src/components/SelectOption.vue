@@ -1,12 +1,12 @@
 <template>
     <div>
-        {{ settingTime }}min
+        {{ optionTime }}min
     </div>
 </template>
 <script>
 export default {
     props: {
-        settingTime: Number
+        optionTime: Number
     }
 }
 </script>

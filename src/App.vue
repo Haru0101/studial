@@ -3,7 +3,7 @@
     <Logo v-show="true"></Logo>
     <Dial v-show="false"></Dial>
     <SelectOption v-show="true" :settingTime="settingTime"></SelectOption>
-    <Button v-show="false"></Button>
+    <Button v-show="false" :buttonName="buttonName"></Button>
   </div>
 </template>
 
@@ -23,7 +23,8 @@ export default {
   },
   data() {
     return {
-      settingTime: 15
+      settingTime: 15,
+      buttonName: "Start"
     }
   }
 }

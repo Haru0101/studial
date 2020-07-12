@@ -1,7 +1,12 @@
 <template>
-    <footer class="footer">
-        Button
-    </footer>
+    <button>{{ buttonName }}</button>
 </template>
+<script>
+export default {
+    props: {
+        buttonName: String
+    }
+}
+</script>
 <style lang="scss" scoped>
 </style>

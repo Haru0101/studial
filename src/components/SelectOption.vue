@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{ settingTime }}
+        {{ settingTime }}min
     </div>
 </template>
 <script>

@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <Logo></Logo>
-    <Dial></Dial>
-    <SelectOption></SelectOption>
-    <Button></Button>
+    <Logo v-show="true"></Logo>
+    <Dial v-show="false"></Dial>
+    <SelectOption v-show="true"></SelectOption>
+    <Button v-show="false"></Button>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <div class="buttonsWrap">
-        <button v-for="(optionTime, index) in optionTimeArray" :key="index" @click="selectTime(optionTime)">
+        <button class="" v-for="(optionTime, index) in optionTimeArray" :key="index" @click="selectTime(optionTime)">
             {{ optionTime }} min
         </button>
     </div>
@@ -9,7 +9,7 @@
     export default {
         data() {
             return {
-                optionTimeArray: [15, 30, 45, 60],
+                optionTimeArray: [15, 30, 45, 60]
             }
         },
         methods: {
@@ -24,5 +24,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        button {
+            width: 100%;
+            padding: 10px 0;
+            margin: 10px 0;
+        }
     }
 </style>

@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <Logo v-show="true"></Logo>
-    <Dial v-show="false" :selectedTime="selectedTime"></Dial>
+    <Dial v-show="true" :selectedTime="selectedTime"></Dial>
     <SelectOption v-show="true"></SelectOption>
-    <Buttons v-show="false"></Buttons>
+    <Buttons v-show="true"></Buttons>
   </div>
 </template>
 
@@ -23,7 +23,7 @@
     },
     data() {
       return {
-        selectedTime: null
+        selectedTime: 0
       }
     }
   }

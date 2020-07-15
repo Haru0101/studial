@@ -1,5 +1,9 @@
 <template>
-    <div v-show="selectedTime">{{ selectedTime }}</div>
+    <div class="dial">
+        <div>
+            {{ selectedTime }}
+        </div>
+    </div>
 </template>
 <script>
 export default {
@@ -8,3 +12,10 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+    .dial {
+        height: 40px;
+        padding: 20px 40px;
+        border: 1px solid #ccc; 
+    }
+</style>

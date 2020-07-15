@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="buttonsWrap">
         <StartButton v-if="!runningTimerState"></StartButton>
         <StopButton v-else></StopButton>
         <ResetButton v-show="true"></ResetButton>
@@ -21,15 +21,20 @@
     }
 </script>
 <style lang="scss">
+    .buttonsWrap {
+        button {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
     button {
         border: none;
         border-radius: 50px;
         background: #F4F4F8;
-        box-shadow:  8px 8px 16px #c1c1c4, 
-             -8px -8px 16px #ffffff;
+        box-shadow:  5px 5px 10px #c1c1c4, -5px -5px 10px #ffffff;
         padding: 20px 30px;
         &:active {
-            transition: 0.2s all;
+            transition: 0.1s all;
             box-shadow: none;
         }
     }

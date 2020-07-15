@@ -3,7 +3,7 @@
     <div class="wrapper">
       <Logo v-show="true"></Logo>
       <Dial v-show="true" :selectedTime="selectedTime"></Dial>
-      <SelectOption v-show="true"></SelectOption>
+      <SelectOption v-show="true" :selectedTime="selectedTime"></SelectOption>
       <Buttons :runningTimerState="runningTimerState" v-show="true"></Buttons>
     </div>
   </div>

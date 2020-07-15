@@ -1,22 +1,24 @@
 <template>
-    <div class="buttonsWrap">
-        <input type="range" v-model="optionTime" max="60" min="0">
-            {{ optionTime }} min
+    <div class="optionWrap">
+        <input type="range" v-model="$parent.selectedTime" max="60" min="0">
+        {{ selectedTime }} min
     </div>
 </template>
 <script>
     export default {
-        data() {
-            return {
-                optionTime: 0
-            }
+        props: {
+            selectedTime: Number
         },
-        methods: {
-            selectTime: function (selectedTime) {
-                this.$parent.selectedTime = selectedTime;
-            }
-        }
     }
 </script>
 <style lang="scss" scoped>
+    .optionWrap {
+        margin: 40px 0;
+    }
+
+    input[type="range"] {
+        display: block;
+        width: 100%;
+
+    }
 </style>

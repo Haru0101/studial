@@ -1,3 +1,6 @@
 <template>
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="studial logo" src="../assets/logo.png">
 </template>
+<style lang="scss" scoped>
+img {width: 40%;}
+</style>

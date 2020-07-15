@@ -14,7 +14,6 @@ export default {
 </script>
 <style lang="scss" scoped>
     .dial {
-        height: 40px;
         padding: 20px 40px;
         border: 1px solid #ccc; 
     }

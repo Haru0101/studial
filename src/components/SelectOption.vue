@@ -27,8 +27,9 @@
 
         button {
             width: 100%;
-            padding: 10px 0;
+            padding: 20px 0;
             margin: 10px 0;
+            line-height: 1;
         }
     }
 </style>

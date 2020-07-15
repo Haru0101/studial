@@ -20,3 +20,13 @@
         }
     }
 </script>
+<style>
+    button {
+        border: none;
+        border-radius: 50px;
+        background: #F4F4F8;
+        box-shadow:  8px 8px 16px #c1c1c4, 
+             -8px -8px 16px #ffffff;
+        padding: 20px 30px;
+    }
+</style>

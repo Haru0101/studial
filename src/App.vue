@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <Logo v-show="true"></Logo>
-    <Dial v-show="true" :selectedTime="selectedTime"></Dial>
-    <SelectOption v-show="true"></SelectOption>
-    <Buttons :runningTimerState="runningTimerState" v-show="true"></Buttons>
+    <div class="wrapper">
+      <Logo v-show="true"></Logo>
+      <Dial v-show="true" :selectedTime="selectedTime"></Dial>
+      <SelectOption v-show="true"></SelectOption>
+      <Buttons :runningTimerState="runningTimerState" v-show="true"></Buttons>
+    </div>
   </div>
 </template>
 
@@ -42,5 +44,9 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+
+  .wrapper {
+    padding: 0 15px;
   }
 </style>

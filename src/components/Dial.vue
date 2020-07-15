@@ -1,5 +1,5 @@
 <template>
-    <div>{{ selectedTime }}</div>
+    <div v-show="selectedTime">{{ selectedTime }}</div>
 </template>
 <script>
 export default {

@@ -3,7 +3,7 @@
     <Logo v-show="true"></Logo>
     <Dial v-show="true" :selectedTime="selectedTime"></Dial>
     <SelectOption v-show="true"></SelectOption>
-    <Buttons v-show="true"></Buttons>
+    <Buttons :runningTimerState="runningTimerState" v-show="true"></Buttons>
   </div>
 </template>
 
@@ -23,7 +23,8 @@
     },
     data() {
       return {
-        selectedTime: 0
+        selectedTime: 0,
+        runningTimerState: false
       }
     }
   }

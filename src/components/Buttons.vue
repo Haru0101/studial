@@ -1,7 +1,7 @@
 <template>
     <div>
-        <StartButton v-show="true"></StartButton>
-        <StopButton v-show="true"></StopButton>
+        <StartButton v-if="!runningTimerState"></StartButton>
+        <StopButton v-else></StopButton>
         <ResetButton v-show="true"></ResetButton>
     </div>
 </template>
@@ -14,6 +14,9 @@
             StartButton,
             StopButton,
             ResetButton
+        },
+        props: {
+            runningTimerState: Boolean
         }
     }
 </script>

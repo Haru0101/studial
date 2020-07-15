@@ -6,19 +6,19 @@
     </div>
 </template>
 <script>
-export default {
-    props: {
-        selectedTime: Number
+    export default {
+        props: {
+            selectedTime: Number
+        }
     }
-}
 </script>
 <style lang="scss" scoped>
     .dial {
-        padding: 20px 40px;
+        padding: 40px;
         border-radius: 10px;
         background: #F4F4F8;
-        box-shadow: inset 8px 8px 16px #c1c1c4, 
-            inset -8px -8px 16px #ffffff;
-            margin: 0px 0px 20px;
+        box-shadow: inset 5px 5px 10px #c1c1c4,
+            inset -5px -5px 10px #ffffff;
+            margin: 0 0 20px;
     }
 </style>

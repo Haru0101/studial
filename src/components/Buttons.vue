@@ -20,7 +20,7 @@
         }
     }
 </script>
-<style>
+<style lang="scss">
     button {
         border: none;
         border-radius: 50px;
@@ -28,5 +28,9 @@
         box-shadow:  8px 8px 16px #c1c1c4, 
              -8px -8px 16px #ffffff;
         padding: 20px 30px;
+        &:active {
+            transition: 0.2s all;
+            box-shadow: none;
+        }
     }
 </style>

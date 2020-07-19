@@ -14,6 +14,7 @@
 </script>
 <style lang="scss" scoped>
     .dial {
+        font-size: 26px;
         padding: 40px;
         border-radius: 10px;
         background: #F4F4F8;

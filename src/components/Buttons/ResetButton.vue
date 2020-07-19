@@ -5,7 +5,8 @@
     export default {
         methods: {
             resetTimer: function () {
-                this.$parent.$parent.selectedTime = 0;
+                this.$parent.$parent.min = 0;
+                this.$parent.$parent.sec = 0;
                 this.$parent.$parent.runningTimerState = false;
             }
         }

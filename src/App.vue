@@ -2,8 +2,8 @@
   <div id="app">
     <div class="wrapper">
       <Logo v-show="true"></Logo>
-      <Dial v-show="true" :selectedTime="selectedTime"></Dial>
-      <SelectOption v-show="true" :selectedTime="selectedTime"></SelectOption>
+      <Dial v-show="true"></Dial>
+      <SelectOption v-show="true" :min="min"></SelectOption>
       <Buttons :runningTimerState="runningTimerState" v-show="true"></Buttons>
     </div>
   </div>
@@ -25,8 +25,25 @@
     },
     data() {
       return {
-        selectedTime: 0,
-        runningTimerState: false
+        runningTimerState: false,
+        timerObj: null,
+        min: 0,
+        sec: 0,
+      }
+    },
+    methods: {
+      count: function () {
+        if (this.sec <= 0 && this.min >= 1) {
+          this.min--;
+          this.sec = 59;
+        } else if (this.sec <= 0 && this.min <= 0) {
+          this.complete();
+        } else {
+          this.sec--;
+        }
+      },
+      complete: function () {
+        clearInterval(this.timerObj)
       }
     }
   }

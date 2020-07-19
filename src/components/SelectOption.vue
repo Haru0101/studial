@@ -1,13 +1,13 @@
 <template>
     <div class="optionWrap">
-        <input type="range" v-model="$parent.selectedTime" max="60" min="0">
-        {{ selectedTime }} min
+        <input type="range" v-model="$parent.min" max="60" min="0">
+        {{ this.min }} min
     </div>
 </template>
 <script>
     export default {
         props: {
-            selectedTime: Number
+            min: Number
         },
     }
 </script>

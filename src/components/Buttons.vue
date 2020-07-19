@@ -22,9 +22,18 @@
 </script>
 <style lang="scss">
     .buttonsWrap {
+        position: fixed;
+        width: 90%;
+        margin: 0 auto 10px;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+
         button {
             width: 100%;
             margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 14px;
         }
     }
     button {

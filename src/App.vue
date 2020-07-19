@@ -32,11 +32,7 @@
       }
     },
     mounted() {
-      document.addEventListener("deviceready", onDeviceReady, false);
-
-      function onDeviceReady() {
-        navigator.notification.vibrate(1000);
-      }
+      window.navigator.vibrate(200);
     },
     methods: {
       count: function () {

@@ -31,6 +31,9 @@
         sec: 0,
       }
     },
+    mounted(){
+      navigator.notification.vibrate(1000);
+    },
     methods: {
       count: function () {
         if (this.sec <= 0 && this.min >= 1) {

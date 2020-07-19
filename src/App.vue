@@ -31,8 +31,12 @@
         sec: 0,
       }
     },
-    mounted(){
-      navigator.notification.vibrate(1000);
+    mounted() {
+      document.addEventListener("deviceready", onDeviceReady, false);
+
+      function onDeviceReady() {
+        navigator.notification.vibrate(1000);
+      }
     },
     methods: {
       count: function () {

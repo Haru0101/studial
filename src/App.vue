@@ -23,6 +23,13 @@
       Buttons,
       Logo
     },
+    watch:{
+      sec: function () {
+        if(this.min == 0 && this.sec == 0) {
+          window.navigator.vibrate(1500);
+        }
+      }
+    },
     data() {
       return {
         runningTimerState: false,

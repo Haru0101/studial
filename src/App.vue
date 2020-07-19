@@ -31,9 +31,6 @@
         sec: 0,
       }
     },
-    mounted() {
-      window.navigator.vibrate(1000);
-    },
     methods: {
       count: function () {
         if (this.sec <= 0 && this.min >= 1) {

@@ -42,6 +42,9 @@
         background: #F4F4F8;
         box-shadow:  5px 5px 10px #c1c1c4, -5px -5px 10px #ffffff;
         padding: 20px 30px;
+        &:focus {
+            outline:0;
+        }
         &:active {
             transition: 0.1s all;
             box-shadow: none;

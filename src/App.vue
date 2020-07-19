@@ -32,7 +32,7 @@
       }
     },
     mounted() {
-      window.navigator.vibrate(200);
+      window.navigator.vibrate(1000);
     },
     methods: {
       count: function () {

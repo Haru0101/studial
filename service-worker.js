@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/studial/precache-manifest.3d0eb3ac579910fb0a68454bfb5fbdd3.js"
+  "/studial/precache-manifest.11034c8587e50912d4f31fa1fe718e90.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "studial"});

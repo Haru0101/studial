@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "374ca1ef911e654d2aca",
+    "revision": "ca518b633726f1584d88",
     "url": "/studial/css/app.2594a0c7.css"
   },
   {
@@ -8,12 +8,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/studial/img/logo.7095d1de.png"
   },
   {
-    "revision": "d038b08cc1f70534d51b83685bdbad7a",
+    "revision": "7abd54038e25e78950a75f07f741ebce",
     "url": "/studial/index.html"
   },
   {
-    "revision": "374ca1ef911e654d2aca",
-    "url": "/studial/js/app.abe64280.js"
+    "revision": "ca518b633726f1584d88",
+    "url": "/studial/js/app.644e3d08.js"
   },
   {
     "revision": "d80e6992c39d5e7c25a9",

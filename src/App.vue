@@ -39,7 +39,7 @@
           this.sec = 59;
         } else if (this.sec <= 0 && this.min <= 0) {
           this.complete();
-          this.soundAlert;
+          this.soundAlert();
         } else {
           this.sec--;
         }
@@ -57,7 +57,6 @@
         alert('complete');
         clearInterval(this.timerObj)
         window.navigator.vibrate(1500);
-        this.soundAlert;
       },
       beep: function () {
         console.log('beep');

@@ -58,9 +58,11 @@
         }, 200);
       },
       complete: function () {
-        // alert('complete');
+        if(window.navigator.vibrate){
+          window.navigator.vibrate([200,200,200,200,200]);
+        }
         clearInterval(this.timerObj)
-        window.navigator.vibrate(1500);
+        
       },
     }
   }

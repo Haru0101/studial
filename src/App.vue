@@ -58,11 +58,11 @@
         }, 200);
       },
       complete: function () {
-        if(window.navigator.vibrate){
-          window.navigator.vibrate([200,200,200,200,200]);
+        if (window.navigator.vibrate) {
+          window.navigator.vibrate([200, 200, 200, 200, 200]);
         }
         clearInterval(this.timerObj)
-        
+
       },
     }
   }
